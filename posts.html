@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Guides & Articles"
+permalink: /posts/
+---
+<h1>Guides & Articles</h1>
+<ul>
+{% for post in site.posts %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> — <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+{% endfor %}
+</ul>

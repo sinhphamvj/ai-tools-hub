@@ -1,0 +1,10 @@
+title: "AI Tools Hub"
+tagline: "Find the best AI tools, backed by data"
+description: "Reviews, comparisons, and guides for the best AI tools in 2026. Curated by humans, powered by AI research."
+url: "https://sinhphamvj.github.io"
+baseurl: "/ai-tools-hub"
+author: "AI Tools Hub"
+plugins: []
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/

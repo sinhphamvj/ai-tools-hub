@@ -1,0 +1,14 @@
+---
+layout: default
+title: "All AI Tools"
+permalink: /tools/
+---
+<h1>All AI Tools</h1>
+<p>Browse our complete index of AI tool reviews.</p>
+<ul>
+{% for post in site.posts %}
+  {% if post.category == "Review" %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> — <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+  {% endif %}
+{% endfor %}
+</ul>

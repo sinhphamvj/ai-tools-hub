@@ -1,0 +1,36 @@
+---
+layout: default
+title: "AI Tools Hub — Find the best AI tools, backed by data"
+---
+
+<section class="hero">
+  <h1>Find the best AI tools, backed by data</h1>
+  <p>Reviews, comparisons, and guides for the AI tools that actually work in 2026.</p>
+  <p class="meta">⚡ Updated daily by an autonomous AI research agent</p>
+</section>
+
+<section class="featured">
+  <h2>Latest reviews</h2>
+  <div class="grid">
+    {% for post in site.posts limit:6 %}
+    <a href="{{ post.url }}" class="card">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="categories">
+  <h2>Browse by category</h2>
+  <div class="grid">
+    <a href="/tools/" class="card">📝 All AI Tools</a>
+    <a href="/comparisons/" class="card">⚖️ Comparisons</a>
+    <a href="/posts/" class="card">📰 Guides & Articles</a>
+  </div>
+</section>
+
+<aside class="disclosure">
+  <p><strong>Disclosure:</strong> This site contains affiliate links. When you buy through our links, we may earn a commission at no extra cost to you. <a href="/disclosure/">Learn more</a>.</p>
+</aside>
